@@ -8,7 +8,6 @@ Weather Reports is a website that gives the 5-day weather report of a selected c
 - [ReactJs](https://reactjs.org/docs/getting-started.html)
 - [Bootstrap](https://getbootstrap.com/docs/)
 - [Weather-icons](https://www.npmjs.com/package/weather-icons)
-- 
 
 ## Available Scripts
 
