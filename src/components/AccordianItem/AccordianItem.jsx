@@ -1,7 +1,7 @@
 import moment from "moment";
 import { Card } from "../";
 
-function AccordianItem({ data, date, item }) {
+function AccordianItem({ data, date }) {
   return (
     <div className="accordion-item">
       <h2 className="accordion-header">
@@ -9,7 +9,7 @@ function AccordianItem({ data, date, item }) {
           className="accordion-button collapsed"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target={"#Collapse" + item}
+          data-bs-target="#CollapseOne"
           aria-expanded="true"
           aria-controls="collapseOne"
         >
@@ -17,13 +17,13 @@ function AccordianItem({ data, date, item }) {
         </button>
       </h2>
       <div
-        id={"Collapse" + item}
+        id="CollapseOne"
         className="accordion-collapse collapse"
         aria-labelledby="headingOne"
         data-bs-parent="#accordion"
       >
         <div className="accordion-body">
-          <Card data={data.list[item]} city_name={data.city.name} />
+          <Card data={data} city_name={data.name} />
         </div>
       </div>
     </div>

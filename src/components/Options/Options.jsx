@@ -20,20 +20,27 @@ function Options({ cities, fetchAPI_weather, setData }) {
   }
   return (
     <div className="w-50 mx-auto">
-      <form onSubmit={handleSubmit}>
-        <input
-          placeholder="Type your city name..."
-          className="form-control"
-          type="text"
-          list="cities"
-          onChange={handleChange}
-        />
+      <form onSubmit={handleSubmit} className="d-flex justify-content-center">
+        <div>
+          <input
+            placeholder="Type your city name..."
+            className="form-control"
+            type="text"
+            list="cities"
+            onChange={handleChange}
+          />
 
-        <datalist className="text-primary p-5" id="cities">
-          {cities.map(({ name }, key) => (
-            <option value={name} key={key} />
-          ))}
-        </datalist>
+          <datalist className="text-primary p-5" id="cities">
+            {cities.map(({ name }, key) => (
+              <option value={name} key={key} />
+            ))}
+          </datalist>
+        </div>
+        <div>
+          <button className="btn" type="submit">
+            <i className="bi bi-search text-white p-2"></i>
+          </button>
+        </div>
       </form>
     </div>
   );

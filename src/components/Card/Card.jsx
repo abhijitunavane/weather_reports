@@ -8,7 +8,7 @@ function Card({ data, city_name }) {
     console.log();
   });
   return (
-    <div className="card bg-primary text-white">
+    <div className={classNames("card text-white", styles.cardContainer)}>
       <div className="card-body row p-md-5">
         <div className="col-md-6 text-center text-md-start ">
           <div className="py-2 p-md-0">

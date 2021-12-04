@@ -9,6 +9,9 @@
     font-size: 80px;
     vertical-align:middle;
 }
+.cardContainer {
+    background-color: #0e8e53;
+}
 
 @media (max-width: 770px) {
     .icon {
