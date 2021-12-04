@@ -1,0 +1,17 @@
+.icon {
+    width: 100%;
+}
+.temp {
+    font-size: 50px;
+}
+.celsius {
+    margin-left: 10px;
+    font-size: 80px;
+    vertical-align:middle;
+}
+
+@media (max-width: 770px) {
+    .icon {
+        width: 50%;
+    }
+}
