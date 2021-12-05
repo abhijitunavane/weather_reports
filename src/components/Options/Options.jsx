@@ -1,4 +1,6 @@
 import { useState } from "react";
+import classNames from 'classnames';
+import styles from "./Options.module.css";
 function Options({ cities, fetchAPI_weather, setData }) {
   const [searchedTerm, setSearchedTerm] = useState("");
 
@@ -20,22 +22,13 @@ function Options({ cities, fetchAPI_weather, setData }) {
   }
   return (
     <div className="w-50 mx-auto">
-      <form onSubmit={handleSubmit} className="d-flex justify-content-center">
-        <div>
+      <form onSubmit={handleSubmit} className="d-flex justify-content-center">        
           <input
             placeholder="Type your city name..."
-            className="form-control rounded-0"
-            type="text"
-            list="cities"
+            className={classNames("form-control rounded-0", styles.search)}
+            type="search"
             onChange={handleChange}
           />
-
-          <datalist className="text-primary p-5" id="cities">
-            {cities.map(({ name }, key) => (
-              <option value={name} key={key} />
-            ))}
-          </datalist>
-        </div>
         <div>
           <button className="btn btn-dark rounded-0" type="submit">
             <i className="bi bi-search text-white p-2"></i>

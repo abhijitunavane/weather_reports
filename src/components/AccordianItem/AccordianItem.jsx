@@ -5,7 +5,7 @@ function AccordianItem({ data, date }) {
     <div className="accordion-item">
       <h2 className="accordion-header">
         <button
-          className="accordion-button collapsed"
+          className="accordion-button"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#CollapseOne"
@@ -17,7 +17,7 @@ function AccordianItem({ data, date }) {
       </h2>
       <div
         id="CollapseOne"
-        className="accordion-collapse collapse"
+        className="accordion-collapse collapse show"
         aria-labelledby="headingOne"
         data-bs-parent="#accordion"
       >
