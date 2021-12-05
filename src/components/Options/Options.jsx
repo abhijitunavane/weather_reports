@@ -1,7 +1,7 @@
 import { useState } from "react";
 import classNames from 'classnames';
 import styles from "./Options.module.css";
-function Options({ cities, fetchAPI_weather, setData }) {
+function Options({  fetchAPI_weather, setData }) {
   const [searchedTerm, setSearchedTerm] = useState("");
 
   const handleSubmit = (e) => {
@@ -16,10 +16,6 @@ function Options({ cities, fetchAPI_weather, setData }) {
   const handleChange = (e) => {
     setSearchedTerm(e.target.value);
   };
-
-  if (cities.length < 1) {
-    return <h1 className="text-white text-center">Fetching...</h1>;
-  }
   return (
     <div className="w-50 mx-auto">
       <form onSubmit={handleSubmit} className="d-flex justify-content-center">        
