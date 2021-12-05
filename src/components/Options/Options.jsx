@@ -24,7 +24,7 @@ function Options({ cities, fetchAPI_weather, setData }) {
         <div>
           <input
             placeholder="Type your city name..."
-            className="form-control"
+            className="form-control rounded-0"
             type="text"
             list="cities"
             onChange={handleChange}
@@ -37,7 +37,7 @@ function Options({ cities, fetchAPI_weather, setData }) {
           </datalist>
         </div>
         <div>
-          <button className="btn" type="submit">
+          <button className="btn btn-dark rounded-0" type="submit">
             <i className="bi bi-search text-white p-2"></i>
           </button>
         </div>

@@ -1,8 +1,6 @@
 import moment from "moment";
 import { AccordianItem } from "../";
 
-// const listIndices = [32, 24, 16, 8, 0];
-
 function Graphics({ data }) {
   if (!data) {
     return "";
@@ -14,7 +12,7 @@ function Graphics({ data }) {
         <AccordianItem
           data={data}
           date={moment()
-            .format("ddd Do MMMM")
+            .format("ddd Do MMMM, HH:mm:ss")
             .toString()}
         />
       </div>

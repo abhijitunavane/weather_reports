@@ -1,4 +1,3 @@
-import moment from "moment";
 import { Card } from "../";
 
 function AccordianItem({ data, date }) {
