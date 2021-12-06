@@ -1,6 +1,6 @@
 # Weather Reports
 
-Weather Reports is a website that gives the 5-day weather report of a selected city.
+Weather Reports is a website that gives current weather report of the selected city.
 
 # Requirements
 
